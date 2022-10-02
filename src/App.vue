@@ -17,7 +17,7 @@
     <nut-tabbar-item tab-title="首页" icon="home" to="/home" />
     <nut-tabbar-item tab-title="功能" icon="category" to="/func" />
     <nut-tabbar-item tab-title="消息" icon="message" to="/message" />
-    <nut-tabbar-item tab-title="我的" icon="my" to="/my" />
+    <nut-tabbar-item tab-title="招新" icon="my" to="/enroll" />
   </nut-tabbar>
 </template>
 
