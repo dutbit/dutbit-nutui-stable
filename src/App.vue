@@ -34,18 +34,6 @@ export default {
       },
     }
   },
-  setup() {
-    let isShowBack = ref(false)
-    let isShowTabbar = ref(true)
-    let activeTabbar = ref(0)
-
-
-    return {
-      isShowBack,
-      isShowTabbar,
-      activeTabbar
-    }
-  },
   computed: {
     isHome() {
       return this.app.pageTitle == '首页'

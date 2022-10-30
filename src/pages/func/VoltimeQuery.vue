@@ -16,7 +16,7 @@
     <hr />
     <div class="err-alert" v-if="numSameID > 1 || numSameName > numDupName">
       数据异常，您的学号对应 <strong>{{ numSameID }}</strong> 个姓名，您的姓名对应
-      <strong>{{ numSameName }}</strong> 个学号，请
+      <strong>{{ numSameName }}</strong> 个学号，可能是存在重名!若有问题请
       <router-link to="/func/issue-form?type=志愿时长查询">反馈错误</router-link>
     </div>
     <div class="err-alert" v-if="isErrQueryLost">数据有缺失，请 <a href="#">反馈错误</a></div>
@@ -46,10 +46,10 @@
             <td style="max-width: 7em">{{ item.stu_id }}</td>
             <td style="max-width: 7em">{{ item.name }}</td>
             <td style="max-width: 6em">{{ item.faculty }}</td>
-            <td style="max-width: 7em">{{ item.activity_DATE }}</td>
+            <td style="max-width: 7em">{{ item.date }}</td>
             <td style="max-width: 3em">{{ item.duration }}</td>
             <td style="max-width: 15em">{{ item.activity_name }}</td>
-            <td style="max-width: 15em">{{ item.activity_faculty }}</td>
+            <td style="max-width: 15em">{{ item.duty_faculty }}</td>
             <td style="max-width: 7em">{{ item.duty_person }}</td>
             <td style="max-width: 15em">{{ item.remark }}</td>
           </tr>

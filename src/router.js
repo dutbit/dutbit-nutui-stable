@@ -28,7 +28,7 @@ const routes = [
   { path: '/func/issue-form', component: IssueForm, meta: { pageTitle: '咨询反馈' } },
   { path: '/func/point', component: PointQuery, meta: { pageTitle: '积分查询' } },
   { path: '/func/postcard', component: Postcard, meta: { pageTitle: '大工明信片' } },
-  { path: '/func/voltime', component: VoltimeQuery, meta: { pageTitle: '志愿时长查询' } },
+  { path: '/func/voltime', component: VoltimeQuery, meta: { pageTitle: '志愿时长查询', isShowTabbar: false } },
 ]
 
 const router = createRouter({

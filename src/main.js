@@ -15,7 +15,7 @@ app.use(Button).use(Cell).use(CellGroup)
 .use(Icon).use(Range)
 .use(Form).use(FormItem).use(Input)
 if (import.meta.env.DEV) {
-  app.provide('axiosBaseURL', 'https://www.dutbit.com/apivue')
+  app.provide('axiosBaseURL', 'http://127.0.0.1:5000/apivue')
 } else {
   app.provide('axiosBaseURL', 'https://www.dutbit.com/apivue')
 }
